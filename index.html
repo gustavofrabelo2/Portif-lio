@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Título da aba e descrição para o Google -->
+  <title>Gustavo Fernandes Rabelo | Estudante de Engenharia de Software</title>
+  <meta name="description" content="Currículo e portfólio de Gustavo Fernandes Rabelo, estudante de Engenharia de Software na UniEVANGÉLICA, em Anápolis (GO), em busca de estágio em tecnologia.">
+
+  <!-- Open Graph: deixa o link bonito quando compartilhado no LinkedIn e no WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Gustavo Fernandes Rabelo | Estudante de Engenharia de Software">
+  <meta property="og:description" content="Currículo e portfólio de Gustavo Fernandes Rabelo, estudante de Engenharia de Software em busca de estágio em tecnologia.">
+
+  <meta name="theme-color" content="#ECE6DA">
+
+  <!-- Ícone da aba: as iniciais "GR" desenhadas em SVG -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231C1A17'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='30' fill='%23ECE6DA'%3EGR%3C/text%3E%3C/svg%3E">
+
+  <!-- Fontes do Google Fonts: Instrument Serif (títulos) e Inter (textos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Link escondido que aparece ao apertar Tab: pula direto para o conteúdo -->
+  <a class="pular-conteudo" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <!-- MENU FIXO NO TOPO -->
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="#inicio" class="logo" aria-label="Gustavo Fernandes Rabelo, ir para o início">GR</a>
+
+      <!-- Botão do menu no celular (as três linhas) -->
+      <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <span class="menu-botao-linha"></span>
+        <span class="menu-botao-linha"></span>
+        <span class="menu-botao-linha"></span>
+      </button>
+
+      <!-- Os links são criados pelo main.js a partir do conteudo.js -->
+      <nav id="menu-principal" class="menu" aria-label="Menu principal">
+        <ul id="menu-lista" class="menu-lista"></ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL
+       Cada <section> começa vazia e é preenchida pelo main.js. -->
+  <main id="conteudo-principal" tabindex="-1">
+    <noscript>
+      <p class="aviso-sem-js">Para ver este site, ative o JavaScript no seu navegador.</p>
+    </noscript>
+
+    <section id="inicio" class="inicio" aria-labelledby="inicio-titulo"></section>
+    <section id="sobre" class="secao secao--alt" aria-labelledby="sobre-titulo"></section>
+    <section id="trajetoria" class="secao" aria-labelledby="trajetoria-titulo"></section>
+    <section id="experiencia" class="secao secao--alt" aria-labelledby="experiencia-titulo"></section>
+    <section id="formacao" class="secao" aria-labelledby="formacao-titulo"></section>
+    <section id="projetos" class="secao secao--alt" aria-labelledby="projetos-titulo"></section>
+    <section id="habilidades" class="secao" aria-labelledby="habilidades-titulo"></section>
+    <section id="certificacoes" class="secao secao--alt" aria-labelledby="certificacoes-titulo"></section>
+    <section id="contato" class="secao secao--escura" aria-labelledby="contato-titulo"></section>
+  </main>
+
+  <!-- RODAPÉ (preenchido pelo main.js) -->
+  <footer id="rodape" class="rodape"></footer>
+
+  <!-- Primeiro o conteúdo, depois o código que monta a página -->
+  <script src="js/conteudo.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
